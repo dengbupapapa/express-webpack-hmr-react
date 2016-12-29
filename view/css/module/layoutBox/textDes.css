@@ -1,0 +1,16 @@
+.TextDesBox{
+	height:90px;
+	margin-top: 350px;
+	text-align: center;
+	color:#c9dad6;
+	line-height: 30px;
+	overflow-y: scroll;
+	margin-bottom: 40px;
+}
+.title{
+	font-size: 24px;
+}
+.checked{
+	color: #019a78;
+	font-size: 18px;
+}

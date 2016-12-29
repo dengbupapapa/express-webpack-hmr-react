@@ -1,0 +1,177 @@
+.transition-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
+}
+
+/*
+*滑动覆盖
+*/
+.levelSlide-enter {
+  width: 100%;
+  transform:translateX(100%);
+  position: fixed;
+  z-index: 2;
+}
+
+.levelSlide-enter.levelSlide-enter-active {
+  transition: transform .5s ease-in-out;
+  transform:translateX(0%);
+}
+
+.levelSlide-leave {
+  width: 100%;
+  transform:translateX(0%);
+  position: fixed;
+  z-index:1;
+}
+
+.levelSlide-leave.levelSlide-leave-active {
+  transition: transform .5s ease-in-out;
+  transform:translateX(-2%);
+}
+
+/*
+*滑动覆盖回放
+*/
+
+.reverse-levelSlide-enter {
+  width: 100%;
+  transform:translateX(-2%);
+  position: fixed;
+  z-index: 1;
+}
+
+.reverse-levelSlide-enter.reverse-levelSlide-enter-active {
+  transition: transform .5s ease-in-out;
+  transform:translateX(0%);
+}
+
+.reverse-levelSlide-leave {
+  width: 100%;
+  transform:translateX(0%);
+  position: fixed;
+  z-index:2;
+}
+
+.reverse-levelSlide-leave.reverse-levelSlide-leave-active {
+  transition: transform .5s ease-in-out;
+  transform:translateX(100%);
+}
+
+
+
+/*
+*滑动记忆折返覆盖
+*/
+.retraceSlide-enter {
+  width: 100%;
+  transform:translateX(100%);
+  position: fixed;
+  z-index: 2;
+}
+
+.retraceSlide-enter.retraceSlide-enter-active {
+  transition: transform .5s ease-in-out;
+  transform:translateX(0%);
+}
+
+.retraceSlide-leave {
+  width: 100%;
+  transform:translateX(0%);
+  position: fixed;
+  z-index:1;
+}
+
+.retraceSlide-leave.retraceSlide-leave-active {
+  transition: transform .5s ease-in-out;
+  transform:translateX(-2%);
+}
+
+/*
+*滑动记忆折返覆盖回放
+*/
+
+.reverse-retraceSlide-enter {
+  width: 100%;
+  transform:translateX(-2%);
+  position: fixed;
+  z-index: 1;
+}
+
+.reverse-retraceSlide-enter.reverse-retraceSlide-enter-active {
+  transition: transform .5s ease-in-out;
+  transform:translateX(0%);
+}
+
+.reverse-retraceSlide-leave {
+  width: 100%;
+  transform:translateX(0%);
+  position: fixed;
+  z-index:2;
+}
+
+.reverse-retraceSlide-leave.reverse-retraceSlide-leave-active {
+  transition: transform .5s ease-in-out;
+  transform:translateX(100%);
+}
+
+
+
+/*
+*滑动队列
+*/
+
+.queueSlide-enter {
+  width: 100%;
+  transform:translateX(100%);
+  position: fixed;
+  z-index: 2;
+}
+
+.queueSlide-enter.queueSlide-enter-active {
+  transition: transform .5s ease-in-out;
+  transform:translateX(0%);
+}
+
+.queueSlide-leave {
+  width: 100%;
+  transform:translateX(0%);
+  position: fixed;
+  z-index:1;
+}
+
+.queueSlide-leave.queueSlide-leave-active {
+  transition: transform .5s ease-in-out;
+  transform:translateX(-100%);
+}
+
+
+/*
+*滑动队列反向
+*/
+
+.reverse-queueSlide-enter {
+  width: 100%;
+  transform:translateX(-100%);
+  position: fixed;
+  z-index: 2;
+}
+
+.reverse-queueSlide-enter.reverse-queueSlide-enter-active {
+  transition: transform .5s ease-in-out;
+  transform:translateX(0%);
+}
+
+.reverse-queueSlide-leave {
+  width: 100%;
+  transform:translateX(0%);
+  position: fixed;
+  z-index:1;
+}
+
+.reverse-queueSlide-leave.reverse-queueSlide-leave-active {
+  transition: transform .5s ease-in-out;
+  transform:translateX(100%);
+}
+

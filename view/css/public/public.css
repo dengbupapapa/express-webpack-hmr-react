@@ -1,0 +1,150 @@
+
+/*
+布局
+*/
+.fn-clear:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.fn-clear { *zoom:1; }
+.fn-left{ float: left; }
+.fn-right{ float: right; }
+.fn-text-c{ text-align: center; }
+.fn-text-l{ text-align: left; }
+.fn-text-r{ text-align: right; }
+
+/*
+定位
+*/
+.fn-pin-rae{ position: relative; }
+.fn-pin-ale{ position: absolute; }
+.fn-pin-fxd{ position: fixed; }
+
+/*
+外边距
+*/
+.fn-mt10{margin-top: 10px;}
+.fn-mt20{margin-top: 20px;}
+.fn-mt30{margin-top: 30px;}
+.fn-ml10{margin-left: 10px;}
+.fn-ml20{margin-left: 20px;}
+.fn-ml30{margin-left: 30px;}
+.fn-mb10{margin-bottom: 10px;}
+.fn-mb20{margin-bottom: 20px;}
+.fn-mb30{margin-bottom: 30px;}
+.fn-mr10{margin-right: 10px;}
+.fn-mr20{margin-right: 20px;}
+.fn-mr30{margin-right: 30px;}
+
+/*
+高度
+*/
+.fn-h-rate10{ height: 10%; }
+.fn-h-rate20{ height: 20%; }
+.fn-h-rate30{ height: 30%; }
+.fn-h-rate40{ height: 40%; }
+.fn-h-rate50{ height: 50%; }
+.fn-h-rate60{ height: 60%; }
+.fn-h-rate70{ height: 70%; }
+.fn-h-rate80{ height: 80%; }
+.fn-h-rate90{ height: 90%; }
+.fn-h-rate100{ height: 100%; }
+
+.fn-h-10{ height: 10px; }
+.fn-h-20{ height: 20px; }
+.fn-h-30{ height: 30px; }
+.fn-h-40{ height: 40px; }
+.fn-h-50{ height: 50px; }
+.fn-h-60{ height: 60px; }
+.fn-h-70{ height: 70px; }
+.fn-h-80{ height: 80px; }
+.fn-h-90{ height: 90px; }
+.fn-h-100{ height: 100px; }
+
+/*
+宽度
+*/
+.fn-w-rate10{ width: 10%; }
+.fn-w-rate20{ width: 20%; }
+.fn-w-rate30{ width: 30%; }
+.fn-w-rate40{ width: 40%; }
+.fn-w-rate50{ width: 50%; }
+.fn-w-rate60{ width: 60%; }
+.fn-w-rate70{ width: 70%; }
+.fn-w-rate80{ width: 80%; }
+.fn-w-rate90{ width: 90%; }
+.fn-w-rate100{ width: 100%; }
+
+
+/*
+背景颜色
+*/
+.fn-bgd-000{ background: #000; }
+.fn-bgd-fff{ background: #fff; }
+
+/*
+字体颜色
+*/
+.fn-clr-fff{ color: #fff;}
+.fn-clr-000{ color: #000;}
+
+/*
+透明度
+*/
+.fn-ocy-9{opacity: .9;}
+.fn-ocy-8{opacity: .8;}
+.fn-ocy-7{opacity: .7;}
+.fn-ocy-6{opacity: .6;}
+.fn-ocy-5{opacity: .5;}
+.fn-ocy-4{opacity: .4;}
+.fn-ocy-3{opacity: .3;}
+.fn-ocy-2{opacity: .2;}
+.fn-ocy-1{opacity: .1;}
+
+/*
+字体大小
+*/
+.fn-font-s16{font-size: 16px;}
+.fn-font-s18{font-size: 18px;}
+.fn-font-s48{font-size: 48px;}
+
+/*
+过度
+*/
+.fade-enter{ opacity:0.1;}
+.fade-enter-active{ opacity:1;transition: opacity 0.5s ease-in;}
+.fade-leave{opacity:1;}
+.fade-leave-active{opacity:0.1;transition: opacity 0.5s ease-in;}
+
+
+
+.transition-wrapper {
+  height: 100%;
+}
+
+.exampleRouter-enter {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform:translateX(100%);
+  position: absolute;
+  z-index: 2;
+  box-shadow: -10px -1px 20px #888888;
+}
+
+.exampleRouter-enter.exampleRouter-enter-active {
+  transition: transform .5s ease-in-out;
+  transform:translateX(0%);
+}
+
+.exampleRouter-leave {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform:translateX(0%);
+  position: absolute;
+  z-index:1;
+}
+
+.exampleRouter-leave.exampleRouter-leave-active {
+  transition: transform .5s ease-in-out;
+  transform:translateX(1%);
+}
+

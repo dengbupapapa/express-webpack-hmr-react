@@ -1,0 +1,22 @@
+.banner{ position: absolute; top:-220px; left: 0px; width: 100%; }
+.showImageBox{ width: 350px; height: 350px; border: 15px solid rgba(255,255,255,0.5); background:rgba(255,255,255,0.6); margin:0 auto;  border-radius: 100%; position: relative;}
+.showImage{ width: 100%; height: 100%; border-radius: 100%;   transition: opacity 0.5s ease-in;}
+.iconsBox{ width: 500px; height: 500px; position: absolute; top:-75px; left:-75px; }
+.iconsBox li{ cursor: pointer; position: absolute; background: #9ee8db; width: 60px; height:60px; padding:5px; border-radius: 100%; top:0; left:0; transform-origin:250px 250px; }
+.iconsBox li:hover{ background: #ffc9b1; width: 72px; height: 72px;  transform-origin:253px 253px; }
+.iconsBox li.on{ background: #f7a581; width: 72px; height: 72px;  transform-origin:253px 253px; }
+.iconsBox li:nth-child(5){transform: rotate(165deg); }
+.iconsBox li:nth-child(4){transform: rotate(195deg); }
+.iconsBox li:nth-child(3){transform: rotate(225deg); }
+.iconsBox li:nth-child(2){transform: rotate(255deg); }
+.iconsBox li:nth-child(1){transform: rotate(285deg); }
+.iconsBox li span{ display: block; width: 100%; height: 100%; border-radius: 100%; }
+.iconsBox li:nth-child(5) span{ transform: rotate(-165deg); }
+.iconsBox li:nth-child(4) span{ transform: rotate(-195deg); }
+.iconsBox li:nth-child(3) span{ transform: rotate(-225deg); }
+.iconsBox li:nth-child(2) span{ transform: rotate(-255deg); }
+.iconsBox li:nth-child(1) span{ transform: rotate(-285deg); }
+
+.state-base-start { opacity: 0.01; }
+.state-base-end {  opacity: 1; }
+
