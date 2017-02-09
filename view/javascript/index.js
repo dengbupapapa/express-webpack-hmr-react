@@ -32,3 +32,8 @@ render(
     </Provider>,
     document.getElementById('Root')
 );
+
+
+fetch('/proxy/v2/book/1220562')
+    .then(req => req.json())
+    .then(json => console.log(json));

@@ -50,6 +50,8 @@ if (arg.env) {
 
 		});
 
+		//next();
+
 	});
 
 } else {
@@ -62,9 +64,11 @@ if (arg.env) {
 
 	app.use('*', function(req, res) {
 		res.sendFile(path.join(__dirname, './dist/WEB-INF/index.html'))
+			//next();
 	});
 
 }
+
 
 app.set('port', (process.env.PORT || 3000));
 app.listen(app.get('port'), function() {

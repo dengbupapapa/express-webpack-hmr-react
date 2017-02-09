@@ -234,6 +234,7 @@ import {
 class ComponentIndexType1 extends Component {
 
     render() {
+
         return (
             <div>
                 <Box moreStyle='fn-pin-rae'>
